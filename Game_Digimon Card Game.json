@@ -61,12 +61,15 @@
           "style": {
             "gap": "2vh",
             "padding": "2vh"
+            
           },
           "content": [
             {
               "direction": "column",
               "isSymetricalForOpponents": false,
-              "style": false,
+              "style": {
+                "Width":"20%"
+              },
               "content": [
                 {
                   "section": "Security",
@@ -90,7 +93,9 @@
             },
             {
               "section": "Battle Area",
-              "style": false
+              "style": {
+                "Width":"80%"
+              }
             }
           ]
         },
