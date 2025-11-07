@@ -98,11 +98,7 @@
               "section": "Battle Area",
               "style": {
                 "width":"80%",
-                "height": "80vh",
-                "position": "absolute",
-                "top": "0",
-                "left": "50%",
-                "translate": "-50% -3.25vh"
+                "height": "100%"
               }
             }
           ]
