@@ -265,7 +265,7 @@
             "alignment": "DECK",
             "opponentAlignment": false,
             "noAutoPayTo": true,
-            "isHorizontalAllowed": true,
+            "isHorizontalAllowed": false,
             "displayedTitle": "Digi-Egg",
             "noQuickActions": false,
             "enterTapped": false,
