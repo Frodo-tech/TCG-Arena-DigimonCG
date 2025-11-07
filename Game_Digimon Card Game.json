@@ -261,7 +261,7 @@
             "displayedTitle": "Security",
             "noQuickActions": false,
             "enterTapped": false,
-            "enterSpun": true,
+            "enterSpun": false,
             "isGroupForbidden": false,
             "keepTappedNewTurn": false,
             "showHiddenCardInHistory": false
@@ -289,7 +289,7 @@
             "alignment": "CENTER",
             "opponentAlignment": false,
             "noAutoPayTo": true,
-            "isHorizontalAllowed": true,
+            "isHorizontalAllowed": false,
             "displayedTitle": "Breeding",
             "noQuickActions": false,
             "enterTapped": false,
