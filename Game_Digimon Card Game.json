@@ -8,9 +8,9 @@
     "decksUrl": ""
   },
   "customHelp": "",
-  "cardRotation": "45",
+  "cardRotation": 45,
   "cards": {
-    "dataUrl": "https://github.com/Frodo-tech/TCG-Arena-DigimonCG/blob/main/CardList.json",
+    "dataUrl": "https://raw.githubusercontent.com/Frodo-tech/TCG-Arena-DigimonCG/refs/heads/main/CardList.json",
     "cardBack": ""
   },
   "deckBuilding": {
@@ -51,43 +51,73 @@
       "sections": {
         "customSections": [
           "Security",
-          "Digi-Egg",
+          "Battle Area",
           "Breeding",
-          "Battle Area"
+          "Digi-Egg"
         ],
         "layout": {
           "direction": "row",
           "isSymetricalForOpponents": false,
+          "style": {
+            "gap": "2vh",
+            "padding": "2vh"
+          },
           "content": [
             {
-              "direction": "row",
-              "style": false,
-              "content": [
-                {
-                  "section": "Digi-Egg",
-                  "style": false
-                },
-                {
-                  "section": "Breeding Area",
-                  "style": false
-                }
-              ],
-              "isSymetricalForOpponents": false
-            },
-            {
-              "section": "Battle Area",
-              "style": false
-            },
-            {
-              "direction": "row",
-              "style": "",
+              "direction": "column",
+              "isSymetricalForOpponents": false,
+              "style": {
+                "gap": "1vh",
+                "alignItems": "flex-start"
+              },
               "content": [
                 {
                   "section": "Security",
-                  "style": false
+                  "style": {
+                    "border": "2px solid #444",
+                    "height": "12vh",
+                    "width": "100%"
+                  }
+                },
+                {
+                  "direction": "column",
+                  "isSymetricalForOpponents": false,
+                  "style": {
+                    "gap": "1vh"
+                  },
+                  "content": [
+                    {
+                      "section": "Digi-Egg",
+                      "style": {
+                        "border": "2px dashed #888",
+                        "height": "10vh",
+                        "width": "100%"
+                      }
+                    },
+                    {
+                      "section": "Breeding",
+                      "style": {
+                        "border": "2px solid #888",
+                        "height": "10vh",
+                        "width": "100%"
+                      }
+                    }
+                  ]
                 }
-              ],
-              "isSymetricalForOpponents": false
+              ]
+            },
+            {
+              "section": "Battle Area",
+              "style": {
+                "border": "2px solid #222",
+                "height": "80vh",
+                "width": "60vw",
+                "display": "flex",
+                "flexWrap": "wrap",
+                "justifyContent": "space-around",
+                "alignItems": "center",
+                "padding": "1vh"
+              }
             }
           ]
         },
@@ -98,39 +128,127 @@
           "Digimon": "Battle Area",
           "Option": "Battle Area",
           "Tamer": "Battle Area",
-          "Digi-Egg": "Breeding Area"
+          "Digi-Egg":"Breeding"
         },
         "autoPlayFromStack": {},
         "sectionsDict": {
-          "Digi-Egg": {
-            "title": "Digi-Egg",
-            "isHidden": "yes",
-            "height": "SMALL",
-            "alignment": "START",
-            "opponentAlignment": false,
-            "noAutoPayTo": "true",
+          "Hand": {
+            "isDefaultSection": true,
+            "title": "Hand",
+            "isHidden": "opponent-only",
+            "height": "DEFAULT",
+            "alignment": "CENTER",
+            "autoPayFrom": true,
             "isHorizontalAllowed": false,
-            "displayedTitle": "Digi-Egg",
-            "enterTapped": false,
-            "enterSpun": false,
-            "isGroupForbidden": false,
-            "keepTappedNewTurn": true,
-            "showHiddenCardInHistory": false,
-            "noQuickActions": false
-          },
-          "Security": {
-            "title": "Security",
-            "isHidden": "yes",
-            "height": "SMALL",
-            "alignment": "START",
+            "isGroupForbidden": true,
             "opponentAlignment": false,
-            "noAutoPayTo": true,
-            "isHorizontalAllowed": true,
-            "displayedTitle": "Security",
+            "noAutoPayTo": false,
+            "displayedTitle": "",
             "noQuickActions": false,
             "enterTapped": false,
-            "enterSpun": true,
-            "isGroupForbidden": false,
+            "enterSpun": false,
+            "keepTappedNewTurn": false,
+            "showHiddenCardInHistory": false
+          },
+          "Discard": {
+            "isDefaultSection": true,
+            "title": "Discard",
+            "isHidden": "no",
+            "height": "DEFAULT",
+            "alignment": "NONE",
+            "isHorizontalAllowed": false,
+            "isGroupForbidden": true,
+            "noAutoPayTo": true,
+            "opponentAlignment": false,
+            "displayedTitle": "",
+            "noQuickActions": false,
+            "enterTapped": false,
+            "enterSpun": false,
+            "keepTappedNewTurn": false,
+            "showHiddenCardInHistory": false
+          },
+          "Deck": {
+            "isDefaultSection": true,
+            "title": "Deck",
+            "isHidden": "yes",
+            "height": "DEFAULT",
+            "alignment": "NONE",
+            "isHorizontalAllowed": false,
+            "isGroupForbidden": true,
+            "opponentAlignment": false,
+            "noAutoPayTo": false,
+            "displayedTitle": "",
+            "noQuickActions": false,
+            "enterTapped": false,
+            "enterSpun": false,
+            "keepTappedNewTurn": false,
+            "showHiddenCardInHistory": false
+          },
+          "Stack": {
+            "isDefaultSection": true,
+            "title": "Stack",
+            "isHidden": "no",
+            "height": "HUGE",
+            "alignment": "NONE",
+            "isHorizontalAllowed": false,
+            "isGroupForbidden": true,
+            "displayedTitle": "Pile",
+            "opponentAlignment": false,
+            "noAutoPayTo": false,
+            "noQuickActions": false,
+            "enterTapped": false,
+            "enterSpun": false,
+            "keepTappedNewTurn": false,
+            "showHiddenCardInHistory": false
+          },
+          "Exile": {
+            "isDefaultSection": true,
+            "title": "Exile",
+            "isHidden": "yes",
+            "height": "DEFAULT",
+            "alignment": "NONE",
+            "isHorizontalAllowed": false,
+            "isGroupForbidden": true,
+            "noAutoPayTo": true,
+            "displayedTitle": "Removed",
+            "opponentAlignment": false,
+            "noQuickActions": false,
+            "enterTapped": false,
+            "enterSpun": false,
+            "keepTappedNewTurn": false,
+            "showHiddenCardInHistory": false
+          },
+          "ExileHidden": {
+            "isDefaultSection": true,
+            "title": "ExileHidden",
+            "isHidden": "yes",
+            "height": "DEFAULT",
+            "alignment": "NONE",
+            "isHorizontalAllowed": false,
+            "isGroupForbidden": true,
+            "noAutoPayTo": true,
+            "displayedTitle": "Removed hidden",
+            "opponentAlignment": false,
+            "noQuickActions": false,
+            "enterTapped": false,
+            "enterSpun": false,
+            "keepTappedNewTurn": false,
+            "showHiddenCardInHistory": false
+          },
+          "Sideboard": {
+            "isDefaultSection": true,
+            "title": "Sideboard",
+            "isHidden": "no",
+            "height": "DEFAULT",
+            "alignment": "NONE",
+            "isHorizontalAllowed": false,
+            "isGroupForbidden": true,
+            "opponentAlignment": false,
+            "noAutoPayTo": false,
+            "displayedTitle": "",
+            "noQuickActions": false,
+            "enterTapped": false,
+            "enterSpun": false,
             "keepTappedNewTurn": false,
             "showHiddenCardInHistory": false
           },
@@ -138,27 +256,59 @@
             "title": "Battle Area",
             "isHidden": "no",
             "height": "BIG",
-            "alignment": "CENTER",
+            "alignment": "START",
             "opponentAlignment": false,
-            "noAutoPayTo": false,
+            "noAutoPayTo": true,
             "isHorizontalAllowed": true,
-            "displayedTitle": "Battle Area",
+            "displayedTitle": "",
             "noQuickActions": false,
             "enterTapped": false,
             "enterSpun": false,
             "isGroupForbidden": false,
-            "keepTappedNewTurn": true,
+            "keepTappedNewTurn": false,
+            "showHiddenCardInHistory": false
+          },
+          "Security": {
+            "title": "Security",
+            "isHidden": "yes",
+            "height": "SMALL",
+            "alignment": "DECK",
+            "opponentAlignment": false,
+            "noAutoPayTo": true,
+            "isHorizontalAllowed": true,
+            "displayedTitle": "",
+            "noQuickActions": false,
+            "enterTapped": false,
+            "enterSpun": true,
+            "isGroupForbidden": false,
+            "keepTappedNewTurn": false,
+            "showHiddenCardInHistory": false
+          },
+          "Digi-Egg": {
+            "title": "Digi-Egg",
+            "isHidden": "yes",
+            "height": "SMALL",
+            "alignment": "DECK",
+            "opponentAlignment": false,
+            "noAutoPayTo": true,
+            "isHorizontalAllowed": true,
+            "displayedTitle": "",
+            "noQuickActions": false,
+            "enterTapped": false,
+            "enterSpun": false,
+            "isGroupForbidden": false,
+            "keepTappedNewTurn": false,
             "showHiddenCardInHistory": false
           },
           "Breeding": {
             "title": "Breeding",
             "isHidden": "no",
             "height": "SMALL",
-            "alignment": "END",
+            "alignment": "CENTER",
             "opponentAlignment": false,
-            "noAutoPayTo": false,
+            "noAutoPayTo": true,
             "isHorizontalAllowed": true,
-            "displayedTitle": "Breeding",
+            "displayedTitle": "",
             "noQuickActions": false,
             "enterTapped": false,
             "enterSpun": false,
