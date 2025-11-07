@@ -103,7 +103,7 @@
         "section": "Battle Area",
         "style": {
           "border": "2px solid #222",
-          "height": "50vh",
+          "height": "80vh",
           "width": "60vw",
           "display": "flex",
           "flexWrap": "wrap",
