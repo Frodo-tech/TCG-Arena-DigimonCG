@@ -87,21 +87,19 @@
             },
             {
               "section": "Battle Area",
-              "style": false
+              "style": {
+                "height": " 50vh"
+              }
             }
           ]
         },
-        "categoriesAlreadyOnBoard": [
-          "Digi-Egg"
-        ],
+        "categoriesAlreadyOnBoard": [],
         "autoPlayFromHand": {
           "Digimon": "Battle Area",
           "Option": "Battle Area",
           "Tamer": "Battle Area"
         },
-        "autoPlayFromStack": {
-          "Option": "Discard"
-        },
+        "autoPlayFromStack": {},
         "sectionsDict": {
           "Battle Area": {
             "title": "Battle Area",
@@ -151,8 +149,8 @@
             "keepTappedNewTurn": false,
             "showHiddenCardInHistory": false
           },
-          "Breeding Area": {
-            "title": "Breeding Area",
+          "Breeding": {
+            "title": "Breeding",
             "isHidden": "no",
             "height": "SMALL",
             "alignment": "CENTER",
