@@ -45,7 +45,7 @@
       "defaultNotes": "",
       "tokens": [],
       "countersStartingValues": [
-        "1"
+        "0"
       ],
       "hideFacedDownCards": true,
       "sections": {
@@ -56,70 +56,70 @@
           "Digi-Egg"
         ],
         "layout": {
-          "direction": "row",
-          "isSymetricalForOpponents": false,
-          "style": {
-            "gap": "2vh",
-            "padding": "2vh"
-          },
-          "content": [
-            {
-              "direction": "column",
-              "isSymetricalForOpponents": false,
-              "style": {
-                "gap": "1vh",
-                "alignItems": "flex-start"
-              },
-              "content": [
-                {
-                  "section": "Security",
-                  "style": {
-                    "border": "2px solid #444",
-                    "height": "12vh",
-                    "width": "100%"
-                  }
-                },
-                {
-                  "direction": "column",
-                  "isSymetricalForOpponents": false,
-                  "style": {
-                    "gap": "1vh"
-                  },
-                  "content": [
-                    {
-                      "section": "Digi-Egg",
-                      "style": {
-                        "border": "2px dashed #888",
-                        "height": "10vh",
-                        "width": "100%"
-                      }
-                    },
-                    {
-                      "section": "Breeding",
-                      "style": {
-                        "border": "2px solid #888",
-                        "height": "10vh",
-                        "width": "100%"
-                      }
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "section": "Battle Area",
-              "style": {
-                "border": "2px solid #222",
-                "height": "80vh",
-                "width": "60vw",
-                "display": "flex",
-                "flexWrap": "wrap",
-                "justifyContent": "space-around",
-                "alignItems": "center",
-                "padding": "1vh"
-              }
+    "direction": "row",
+    "isSymetricalForOpponents": false,
+    "style": {
+      "gap": "2vh",
+      "padding": "2vh"
+    },
+    "content": [
+      {
+        "direction": "column",
+        "isSymetricalForOpponents": false,
+        "style": {
+          "gap": "1vh",
+          "alignItems": "flex-start"
+        },
+        "content": [
+          {
+            "section": "Security",
+            "style": {
+              "border": "2px solid #444",
+              "height": "12vh",
+              "width": "100%"
             }
-          ]
+          },
+          {
+            "direction": "row",
+            "isSymetricalForOpponents": false,
+            "style": {
+              "gap": "1vh"
+            },
+            "content": [
+              {
+                "section": "Digi-Egg",
+                "style": {
+                  "border": "2px dashed #888",
+                  "height": "10vh",
+                  "width": "12vw"
+                }
+              },
+              {
+                "section": "Breeding",
+                "style": {
+                  "border": "2px solid #888",
+                  "height": "10vh",
+                  "width": "12vw"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "section": "Battle Area",
+        "style": {
+          "border": "2px solid #222",
+          "height": "50vh",
+          "width": "60vw",
+          "display": "flex",
+          "flexWrap": "wrap",
+          "justifyContent": "space-around",
+          "alignItems": "center",
+          "padding": "1vh"
+        }
+      }
+    ]
         },
         "categoriesAlreadyOnBoard": [
           "Digi-Egg"
