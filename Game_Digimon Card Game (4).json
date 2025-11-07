@@ -87,19 +87,21 @@
             },
             {
               "section": "Battle Area",
-              "style": {
-                "height": " 50vh"
-              }
+              "style": false
             }
           ]
         },
-        "categoriesAlreadyOnBoard": [],
+        "categoriesAlreadyOnBoard": [
+          "Digi-Egg"
+        ],
         "autoPlayFromHand": {
           "Digimon": "Battle Area",
           "Option": "Battle Area",
           "Tamer": "Battle Area"
         },
-        "autoPlayFromStack": {},
+        "autoPlayFromStack": {
+          "Option": "Discard"
+        },
         "sectionsDict": {
           "Battle Area": {
             "title": "Battle Area",
