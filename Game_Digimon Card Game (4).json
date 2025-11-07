@@ -50,7 +50,10 @@
       "hideFacedDownCards": true,
       "sections": {
         "customSections": [
-          "Security"
+          "Security",
+          "Battle Area",
+          "Breeding",
+          "Digi-Egg"
         ],
         "layout": {
           "direction": "row",
@@ -84,7 +87,9 @@
             },
             {
               "section": "Battle Area",
-              "style": false
+              "style": {
+                "height": " 50vh"
+              }
             }
           ]
         },
