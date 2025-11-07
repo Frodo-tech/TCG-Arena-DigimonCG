@@ -68,7 +68,7 @@
               "direction": "column",
               "isSymetricalForOpponents": false,
               "style": {
-                "Width":"20%"
+                "width":"20%"
               },
               "content": [
                 {
@@ -94,7 +94,7 @@
             {
               "section": "Battle Area",
               "style": {
-                "Width":"80%"
+                "width":"80%"
               }
             }
           ]
