@@ -97,8 +97,8 @@
             {
               "section": "Battle Area",
               "style": {
-                "width":"5vw",
-                "height": "100%",
+                "width":"80%",
+                "height": "80vh",
                 "position": "absolute",
                 "top": "0",
                 "left": "50%",
