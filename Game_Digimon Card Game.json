@@ -11,7 +11,7 @@
   "cardRotation": 45,
   "cards": {
     "dataUrl": "https://raw.githubusercontent.com/Frodo-tech/TCG-Arena-DigimonCG/refs/heads/main/CardList.json",
-    "cardBack": ""
+    "cardBack": "https://frodo-tech.github.io/TCG-Arena-DigimonCG/Digimon-Card-Back.png"
   },
   "deckBuilding": {
     "mainFilters": [
@@ -56,63 +56,43 @@
           "Digi-Egg"
         ],
         "layout": {
-    "direction": "row",
-    "isSymetricalForOpponents": false,
-    "style": {
-      "gap": "2vh",
-      "padding": "2vh"
-    },
-    "content": [
-      {
-        "direction": "column",
-        "isSymetricalForOpponents": false,
-        "style": {
-          "gap": "1vh"
-        },
-        "content": [
-          {
-            "section": "Security",
-            "style": {
-              "height": "12vh",
-              "width": "100%"
-            }
+          "direction": "row",
+          "isSymetricalForOpponents": false,
+          "style": {
+            "gap": "2vh",
+            "padding": "2vh"
           },
-          {
-            "direction": "row",
-            "isSymetricalForOpponents": false,
-            "style": {
-              "gap": "1vh"
-            },
-            "content": [
-              {
-                "section": "Digi-Egg"
-              },
-              {
-                "section": "Breeding",
-                "style": {
-                  "border": "2px solid #888",
-                  "height": "10vh",
-                  "width": "12vw"
+          "content": [
+            {
+              "direction": "column",
+              "isSymetricalForOpponents": false,
+              "style": false,
+              "content": [
+                {
+                  "section": "Security",
+                  "style": false
+                },
+                {
+                  "direction": "row",
+                  "isSymetricalForOpponents": false,
+                  "style": false,
+                  "content": [
+                    {
+                      "section": "Digi-Egg"
+                    },
+                    {
+                      "section": "Breeding",
+                      "style": false
+                    }
+                  ]
                 }
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "section": "Battle Area",
-        "style": {
-          "border": "2px solid #222",
-          "height": "80vh",
-          "width": "60vw",
-          "display": "flex",
-          "flexWrap": "wrap",
-          "justifyContent": "space-around",
-          "alignItems": "center",
-          "padding": "1vh"
-        }
-      }
-    ]
+              ]
+            },
+            {
+              "section": "Battle Area",
+              "style": false
+            }
+          ]
         },
         "categoriesAlreadyOnBoard": [
           "Digi-Egg"
@@ -121,8 +101,8 @@
           "Digimon": "Battle Area",
           "Option": "Battle Area",
           "Tamer": "Battle Area",
-          "Digi-Egg":"Breeding",
-          "Security":"Stack"
+          "Digi-Egg": "Breeding",
+          "Security": "Stack"
         },
         "autoPlayFromStack": {},
         "sectionsDict": {
@@ -249,8 +229,8 @@
           "Battle Area": {
             "title": "Battle Area",
             "isHidden": "no",
-            "height": "BIG",
-            "alignment": "CENTER",
+            "height": "MEDIUM",
+            "alignment": "START",
             "opponentAlignment": false,
             "noAutoPayTo": true,
             "isHorizontalAllowed": true,
