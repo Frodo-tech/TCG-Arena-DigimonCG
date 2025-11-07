@@ -93,9 +93,7 @@
             }
           ]
         },
-        "categoriesAlreadyOnBoard": [
-          ""
-        ],
+        "categoriesAlreadyOnBoard": [],
         "autoPlayFromHand": {
           "Digimon": "Battle Area",
           "Option": "Battle Area",
