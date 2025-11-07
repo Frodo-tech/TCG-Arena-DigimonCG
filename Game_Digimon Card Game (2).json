@@ -10,7 +10,7 @@
   "customHelp": "",
   "cardRotation": 45,
   "cards": {
-    "dataUrl": "https://raw.githubusercontent.com/Frodo-tech/TCG-Arena-DigimonCG/refs/heads/main/Game_Digimon%20Card%20Game.json",
+    "dataUrl": "https://raw.githubusercontent.com/Frodo-tech/TCG-Arena-DigimonCG/refs/heads/main/CardList.json",
     "cardBack": ""
   },
   "deckBuilding": {
