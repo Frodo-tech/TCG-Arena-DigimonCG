@@ -63,8 +63,7 @@
           "isSymetricalForOpponents": false,
           "style": {
             "gap": "2vh",
-            "padding": "2vh",
-            "height": "100vh"
+            "padding": "2vh"
 
             
           },
