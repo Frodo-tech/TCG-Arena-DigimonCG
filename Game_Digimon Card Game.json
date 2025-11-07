@@ -250,7 +250,7 @@
             "title": "Battle Area",
             "isHidden": "no",
             "height": "BIG",
-            "alignment": "START",
+            "alignment": "END",
             "opponentAlignment": false,
             "noAutoPayTo": true,
             "isHorizontalAllowed": true,
