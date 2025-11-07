@@ -1,0 +1,65 @@
+{
+  "name": "Digimon Card Game",
+  "menuBackgroundImage": "https://i.ibb.co/gLq9XHSt/LOGO-ALPHA2-1024x239.png",
+  "defaultRessources": {
+    "backgrounds": [
+      "https://i.ibb.co/FbLPhqmd/playsheet-1.jpg"
+    ],
+    "decksUrl": ""
+  },
+  "customHelp": "",
+  "cardRotation": 45,
+  "cards": {
+    "dataUrl": "https://raw.githubusercontent.com/Frodo-tech/TCG-Arena-DigimonCG/refs/heads/main/CardList.json",
+    "cardBack": ""
+  },
+  "deckBuilding": {
+    "mainFilters": [
+      "Name",
+      "Cost",
+      "Type"
+    ],
+    "formats": [
+      {
+        "title": "Classic",
+        "gameplay": "Classic",
+        "customCategories": []
+      }
+    ]
+  },
+  "gameplay": {
+    "Classic": {
+      "mulligan": {
+        "info": "Shuffle hand into the deck, re-draw initial hand 1 time.",
+        "startingHandSize": "5",
+        "drawNewHand": true,
+        "putSelectionAtBottom": false,
+        "drawNewSelectedCards": false
+      },
+      "newTurn": {
+        "drawOnStart": false,
+        "sharedTurn": true,
+        "firstPlayerTokenName": "",
+        "drawPerTurn": 1
+      },
+      "defaultNotes": "",
+      "tokens": [],
+      "countersStartingValues": [
+        "1"
+      ],
+      "hideFacedDownCards": true,
+      "sections": {
+        "customSections": [],
+        "layout": {
+          "direction": "row",
+          "isSymetricalForOpponents": false,
+          "content": []
+        },
+        "categoriesAlreadyOnBoard": [],
+        "autoPlayFromHand": {},
+        "autoPlayFromStack": {},
+        "sectionsDict": {}
+      }
+    }
+  }
+}
