@@ -73,7 +73,6 @@
           {
             "section": "Security",
             "style": {
-              "border": "2px solid #444",
               "height": "12vh",
               "width": "100%"
             }
