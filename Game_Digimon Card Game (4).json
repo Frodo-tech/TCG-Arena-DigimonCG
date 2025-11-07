@@ -93,7 +93,9 @@
             }
           ]
         },
-        "categoriesAlreadyOnBoard": [],
+        "categoriesAlreadyOnBoard": [
+          "Digi-Egg"
+        ],
         "autoPlayFromHand": {
           "Digimon": "Battle Area",
           "Option": "Battle Area",
