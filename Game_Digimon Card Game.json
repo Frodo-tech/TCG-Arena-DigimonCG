@@ -11,7 +11,10 @@
   "cardRotation": 45,
   "cards": {
     "dataUrl": "https://raw.githubusercontent.com/Frodo-tech/TCG-Arena-DigimonCG/refs/heads/main/CardList.json",
-    "cardBack": "https://frodo-tech.github.io/TCG-Arena-DigimonCG/Digimon-Card-Back.png"
+    "cardBack": "https://frodo-tech.github.io/TCG-Arena-DigimonCG/Digimon-Card-Back.png",
+    "extraCardBacks": {
+        "Digi-Egg": "https://frodo-tech.github.io/TCG-Arena-DigimonCG/Digi-Egg-Card-Back.png"
+      }
   },
   "deckBuilding": {
     "mainFilters": [
