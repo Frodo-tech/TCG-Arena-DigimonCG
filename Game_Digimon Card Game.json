@@ -67,8 +67,7 @@
         "direction": "column",
         "isSymetricalForOpponents": false,
         "style": {
-          "gap": "1vh",
-          "alignItems": "flex-start"
+          "gap": "1vh"
         },
         "content": [
           {
@@ -87,12 +86,7 @@
             },
             "content": [
               {
-                "section": "Digi-Egg",
-                "style": {
-                  "border": "2px dashed #888",
-                  "height": "10vh",
-                  "width": "12vw"
-                }
+                "section": "Digi-Egg"
               },
               {
                 "section": "Breeding",
